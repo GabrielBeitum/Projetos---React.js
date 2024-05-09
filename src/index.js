@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Cronometro from './Componentes/Relogio';
-import DataAtual from './Componentes/Calendario';
-import FraseFatec from './Componentes/Frase';
-import reportWebVitals from './reportWebVitals';
+import './Componentes/CSS/index.css';
+import App from './Componentes/App';
+import reportWebVitals from './Base/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Cronometro />
-    <DataAtual/>
-    <FraseFatec/>   
+    <App />
   </React.StrictMode>
 );
 
