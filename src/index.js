@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Componentes/Estrutura/Atividades/Utilitarios/CSS/index.css';
 import App from './Componentes/App';
+import Counter from './Componentes/Estrutura/Atividades/ATV3';
 import reportWebVitals from './Base/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <ATV3 />
+    <Counter />
   </React.StrictMode>
 );
 
