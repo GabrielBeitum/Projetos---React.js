@@ -1,39 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-
-export default function FraseFatec() {
-  const [texto, setTexto] = useState('');
-  const frase = "Conheça a FATEC!!";
-  const intervalo = 500; 
+function Letreiro() {
+  const [text, setText] = useState('');
+  const originalText = 'Conheça a Fatec';
 
   useEffect(() => {
     let index = 0;
-    let timer = null;
-    let timeout = null;
 
-    timer = setInterval(() => {
-      if (index < frase.length) {
-        setTexto(texto + frase[index]);
+    const typingInterval = setInterval(() => {
+      setText((prevText) => {
+        const nextChar = originalText[index];
         index++;
-      } else {
-        clearInterval(timer);
-        timeout = setTimeout(() => {
-          setTexto('');
-        }, 1000);
-      }
-    }, intervalo);
+        if (index >= originalText.length) {
+          index = 0;
+          return '';
+        }
+        return prevText + nextChar;
+      });
+    }, 200);
 
-    return () => {
-      clearInterval(timer);
-      clearTimeout(timeout);
-    };
-  }, [frase, intervalo]);
+    return () => clearInterval(typingInterval);
+  }, []);
 
   return (
-    <div>
-      <h1>{texto}</h1>
-      {<Link className='Link' to={"/"}>Home</Link>}
-    </div>
+    <>
+      <h1>Meu Letreiro</h1>
+      <p>{text}</p>
+      <div>
+        {<Link className="Link" to={"/"}>Home</Link>}
+      </div>
+    </>
+
   );
 }
+
+export default Letreiro;
