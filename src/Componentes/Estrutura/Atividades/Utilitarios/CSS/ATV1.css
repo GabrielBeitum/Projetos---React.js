@@ -1,0 +1,28 @@
+.GeralATV1 {
+    display: flex; /* Layout flexbox para organização responsiva */
+    justify-content: space-between; /* Distribui espaço entre itens */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  
+  .Calendario {
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center;
+  }
+  
+  .Hora, .Data {
+    font-family: 'Arial', sans-serif; /* Fonte legível */
+    margin: 10px 0; /* Espaçamento entre elementos */
+  }
+  
+  .Link {
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #007bff; /* Cor azul do link */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
