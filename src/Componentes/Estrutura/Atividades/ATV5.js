@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './Utilitarios/CSS/ATV5.css';
 
 const Valores = () => {
     const [value, setValue] = useState(0);
