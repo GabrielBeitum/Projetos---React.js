@@ -7,7 +7,7 @@ import DataAtual from "./Atividades/ATV1.js";
 import Letreiro from "./Atividades/ATV2.js";
 import Counter from "./Atividades/ATV3.js";
 import Valores from "./Atividades/ATV4.js";
-import Galeria from "./Atividades/ATV4.js";
+import Galeria from "./Atividades/ATV5.js";
 
 
 
